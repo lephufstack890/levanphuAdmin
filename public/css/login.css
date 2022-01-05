@@ -1,0 +1,205 @@
+body{
+    background-image: url("../images/login.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+}
+
+.app_center{
+    margin: 150px auto;
+}
+
+.card-header{
+    color: #fff;
+    text-align: center;
+    padding-top: 18px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 16px;
+}
+
+.pb-4, .py-4 {
+    padding-bottom: 1.5rem!important;
+    margin: 112px auto;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.card{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+
+input::placeholder{
+    color: #fff;
+}
+
+input[type="email"]{
+    background: rgb(21 11 11 / 50%);
+    width: 100%;
+    padding: 13px 12px 14px 38px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 27px;
+}
+
+input[type="password"]{
+    background: rgb(21 11 11 / 50%);
+    width: 100%;
+    padding: 13px 12px 14px 38px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 27px;
+    position: relative;
+}
+
+input[type="text"]{
+    background: rgb(21 11 11 / 50%);
+    width: 100%;
+    padding: 13px 12px 14px 38px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 27px;
+    position: relative;
+}
+
+.offset-md-4 {
+    margin-left: 0;
+    text-align: center;
+}
+
+.form-check{
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-check button{
+    background: #fc5404 !important;
+    border: 1px solid #f17474!important;
+    color: #333;
+    width: 100%;
+    padding: 11px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.navbar-expand-md{
+    display: none;
+}
+
+.form-check-input{
+    height: 17px;
+    width: 19px;
+}
+
+label.form-check-label{
+    color: #e56d6d;
+    position: relative;
+}
+
+.forgotpassword{
+    color: #fff;
+    text-decoration: none;
+}
+
+a.forgotpassword:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.checkbox-wrap-input{
+    text-align: start;
+    padding-left: 24px;
+    padding-bottom: 10px;
+}
+
+@media (min-width: 1024px){
+    .form__forgotpassword{
+        text-align: end;
+        padding-left: 5px;
+    }
+}
+
+@media (max-width: 739px){
+    .form__forgotpassword{
+        text-align: start;
+        padding-left: 5px;
+    }
+}
+
+.fa-eye{
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    right: 17px;
+    top: 53%;
+    display: none;
+}
+
+.fa-eye-slash{
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    right: 17px;
+    top: 53%;
+}
+
+.fa-key{
+    position: absolute;
+    top: 53%;
+    left: 10px;
+    color: #fff;
+}
+
+.fa-user{
+    position: absolute;
+    top: 31%;
+    left: 10px;
+    color: #fff;
+}
+
+#email{
+    background: rgba(255, 255, 255, 0.08)
+}
+
+#email:hover{
+    background: transparent;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: rgba(255, 255, 255, 0.4);
+    border: 0.1px solid;
+    transition: all 0.5s;
+}
+
+#password{
+    background: rgba(255, 255, 255, 0.08)
+}
+
+#password:hover{
+    background: transparent;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: rgba(255, 255, 255, 0.4);
+    border: 0.1px solid;
+    transition: all 0.5s;
+}
+

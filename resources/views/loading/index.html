@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vui lòng chờ...</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background: #000;
+        }
+
+        #bg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #title {
+            font-size: 40px;
+            color: #fff;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #logo {
+            width: 35%;
+            opacity: 0.5;
+            animation: log;
+            animation-duration: 2s;
+        }
+
+        #box {
+            margin: 0 auto;
+            width: 400px;
+            height: 40px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #1FD1FE;
+        }
+
+        #box_bg {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: #1FD1FE;
+            opacity: 0;
+            top: 0;
+            left: 0;
+            z-index: 99;
+            font-weight: 900;
+            animation: log_2;
+            animation-fill-mode: forwards;
+            animation-duration: 2s;
+            animation-delay: 1s;
+        }
+
+        h1#status {
+            animation: log_3;
+            animation-fill-mode: forwards;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            opacity: 0;
+        }
+
+        @keyframes log_2 {
+            from {
+                width: 0%;
+                height: 100%;
+                background: #1FD1FE;
+                opacity: 0;
+            }
+
+            to {
+                width: 100%;
+                height: 100%;
+                background: #1FD1FE;
+                opacity: .5;
+            }
+        }
+
+        @keyframes log {
+            from {
+                width: 0;
+                opacity: 0;
+            }
+
+            to {
+                width: 35%;
+                opacity: 0.5;
+            }
+        }
+
+        @keyframes log_3 {
+            from {
+
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <div id="bg">
+        <img src="public/images/ok.gif" alt="">
+        <div id="title">
+            <img id="logo" src="../loading/logo_1.svg" alt="">
+        </div>
+
+    </div>
+    <div id="box">
+        <div id="box_bg"></div>
+        <h1 id="status">ĐANG ĐĂNG NHẬP...</h1>
+    </div>
+    <script>
+        setTimeout(() => {
+            window.location.href = "http://localhost:1339/Admin/dashboard";
+        }, 4000);
+    </script>
+
+
+</body>
+
+</html>
